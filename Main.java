@@ -52,5 +52,34 @@ public class Main {
       System.out.println( bestClass[0] + "'s favorite food is " + faveFoods[0] );
       System.out.println( bestClass[3] + "'s favorite food is " + faveFoods[3] );
 
+      // STANDARD FOR LOOP to traverse arrays
+      // Example: START at first index, STOP at final index, CHANGE by 1
+      // WATCH OUT for the bounds with the STOP condition! 
+      // Can use i < array.length OR i <= (array.length - 1)
+      for (int i = 0; i < bestClass.length; i++) {
+         System.out.println( bestClass[i] + "'s favorite food is " + faveFoods[i] );
+      }
+
+      // With STANDARD FOR LOOPS, you have flexibility over 
+      // the ORDER and WAY you traverse through the array!
+      // Example: START at final index, STOP at first index, CHANGE by -1
+      int[] countdown = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+      for (int i = countdown.length - 1 ; i >= 0; i--) {
+         System.out.println(countdown[i]); // VALUE at index i
+
+         // CONDITIONAL inside the loop!
+         if (i == 0) {
+            System.out.println("HAPPY NEW YEAR!!! 🎉🎉🎉");
+         }
+      }
+
+      // Example: CHANGE by 2 instead (visit every OTHER item)
+      for (int i = 0; i < countdown.length; i+=2) {
+         System.out.println("Current index: " + i);
+         System.out.println("Item at index: " + countdown[i]);
+      }
+
+
+
    }
 }
