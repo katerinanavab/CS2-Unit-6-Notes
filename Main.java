@@ -79,6 +79,22 @@ public class Main {
          System.out.println("Item at index: " + countdown[i]);
       }
 
+      // STANDARD FOR LOOPS allow you to modify values
+      // because during iteration, we are keeping track of INDEX
+      // Example: Fill in values for empty array
+      int[] tens = new int[10]; 
+      for (int i = 0; i < tens.length; i++) {
+         // Assign value to tens[i]
+         tens[i] = i * 10;
+         System.out.print(tens[i] + " ");
+      }
+      // Example: Modify existing array values
+      for (int i = 0; i < bestClass.length; i++) {
+         bestClass[i] = bestClass[i] + "yay";
+         System.out.print(bestClass[i] + " ");
+      }
+
+
 
 
    }
